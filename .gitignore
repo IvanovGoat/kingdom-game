@@ -1,0 +1,22 @@
+# Скомпилированные файлы
+build/
+*.exe
+*.out
+*.o
+*.obj
+
+# Папка документации, сгенерированная Doxygen
+docs/
+
+# Файлы Visual Studio
+.vs/
+*.user
+*.suo
+
+# Файлы CLion / CMake
+.idea/
+cmake-build-*/
+
+# Прочее
+Thumbs.db
+.DS_Store
