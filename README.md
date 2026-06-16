@@ -25,7 +25,7 @@
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/ТВОЙ_ЛОГИН/kingdom-game.git
+git clone https://github.com/ivanovGoat/kingdom-game.git
 cd kingdom-game
 
 # Сборка
