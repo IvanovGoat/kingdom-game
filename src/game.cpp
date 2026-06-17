@@ -18,7 +18,7 @@ Nation::Nation(int startGold, int startFood, int startHappiness, int startArmy)
       infrastructure(1), day(0),
       purchaseCount(0), buildCount(0), entertainmentCount(0), trainCount(0), warCount(0),
       startGold(startGold), startFood(startFood), startHappiness(startHappiness), startArmy(startArmy),
-      rng(std::random_device{}())   // <-- исправлено: seed из random_device
+      rng(std::random_device{}())   
 {
     clampResources();
     log("Государство создано.");
