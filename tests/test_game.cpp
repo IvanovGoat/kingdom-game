@@ -2,6 +2,17 @@
 #include "doctest.h"
 #include "../src/game.h"
 
+#ifdef _WIN32
+#include <windows.h>
+// Вспомогательный класс, конструктор которого выполнится до запуска тестов
+static struct ConsoleUtf8Setup {
+    ConsoleUtf8Setup() {
+        SetConsoleOutputCP(CP_UTF8);
+        SetConsoleCP(CP_UTF8);
+    }
+} consoleSetup;
+#endif
+
 TEST_CASE("Оценка качества: разные сценарии") {
     // Великая держава: 200 золота, 150 еды, 80 счастья, 80 армии => 2+2+2+2 = 8
     Nation n1(200, 150, 80, 80);
