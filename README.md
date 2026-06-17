@@ -25,7 +25,11 @@
 
 ```bash
 # Клонирование репозитория
+<<<<<<< HEAD
 git clone https://github.com/IvanovGoat/kingdom-game.git
+=======
+git clone https://github.com/ivanovGoat/kingdom-game.git
+>>>>>>> bb9d0c3356989441cdedfce10708e320f79c1951
 cd kingdom-game
 
 # Сборка
@@ -35,4 +39,8 @@ cmake ..
 cmake --build .
 
 # Запуск игры
+<<<<<<< HEAD
 ./kingdom_game [путь_для_сохранения]
+=======
+./kingdom_game [путь_для_сохранения]
+>>>>>>> bb9d0c3356989441cdedfce10708e320f79c1951
